@@ -18,7 +18,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("🔢 Handwritten Digit Classification using ANN")
+st.title("🔢 Handwritten Digit Classifier using ANN")
 st.markdown("Upload an image of a handwritten digit (0-9) and get instant prediction!")
 
 

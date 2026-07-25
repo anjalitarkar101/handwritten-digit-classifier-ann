@@ -1,7 +1,7 @@
-🔢 Handwritten Digit Classifier
+🔢 Handwritten Digit Classifier (ANN)
 
 ## 📖 Overview
-A Handwritten Digit Classification System built with Streamlit and Artificial Neural Networks (ANN) that recognizes handwritten digits (0-9) from uploaded images. The system uses a neural network trained on the MNIST dataset to provide accurate digit predictions.
+A **Handwritten Digit Classifier** built with Streamlit and Artificial Neural Networks (ANN) that recognizes handwritten digits (0-9) from uploaded images. The system uses a neural network trained on the MNIST dataset to provide accurate digit predictions.
 
 ---
 

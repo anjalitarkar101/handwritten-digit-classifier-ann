@@ -5,9 +5,9 @@ env/
 .vscode/
 __pycache__/
 *.pyc
-*.h5
+
 *.keras
-models/
+
 uploads/
 saved_visualisations/
 *.png
