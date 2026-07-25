@@ -2,7 +2,7 @@
 # app.py - Handwritten Digit Classifier Web App (ANN)
 # ==========================================================
 
-import os
+
 import streamlit as st
 from PIL import Image
 import numpy as np
@@ -51,12 +51,8 @@ uploaded_image = st.file_uploader(
 
 if uploaded_image is not None:
 
-    # Create uploads directory if it doesn't exist
-    os.makedirs('uploads', exist_ok=True)
-    # Save uploaded image
-    file_path = os.path.join('uploads', uploaded_image.name)
-    with open(file_path, 'wb') as f:
-        f.write(uploaded_image.getbuffer())
+    # Open the image directly with PIL (no need to save to disk)
+    image = Image.open(uploaded_image)
 
     col1, col2 = st.columns(2)
 
@@ -69,7 +65,7 @@ if uploaded_image is not None:
         st.subheader("🔍 Prediction")
         with st.spinner("Analyzing..."):
             # Get prediction
-            digit, confidence, probabilities = predict_digit(file_path, model)
+            digit, confidence, probabilities = predict_digit(image, model)
 
         # Display result
         st.markdown(f"### Predicted Digit: **{digit}**")
